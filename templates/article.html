@@ -46,6 +46,12 @@
     </script>
   {% endif %}
 
+  {% if PLUGINS and 'extract_toc' in PLUGINS %}
+      <nav class="toc">
+        {{ article.toc }}
+      </nav>
+  {% endif %}
+
   <div>
     {{ article.content }}
   </div>
